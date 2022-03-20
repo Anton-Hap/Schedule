@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.SettingsController">
+    <children>
+        <Button fx:id="updateButton" layoutX="14.0" layoutY="252.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@style/Style.css" text="^" textFill="#295592">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0" />
+            </font>
+            <effect>
+                <DropShadow height="60.0" radius="29.5" spread="0.2" width="60.0">
+                    <color>
+                        <Color red="0.16078431904315948" green="0.3333333432674408" blue="0.572549045085907" />
+                    </color>
+                </DropShadow>
+            </effect></Button>
+        <Label fx:id="messageLabel" alignment="CENTER" layoutX="58.0" layoutY="260.0" prefHeight="35.0" prefWidth="284.0" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="114.0" text="Расписание" textFill="STEELBLUE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="28.0" text="БАРГУ" textFill="STEELBLUE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="143.0" layoutY="56.0" text="Настройки" textFill="STEELBLUE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="facultyBox" layoutX="80.0" layoutY="84.0" opacity="0.9" prefHeight="26.0" prefWidth="231.0" promptText="Факультет" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-color: #4682B4; -fx-border-radius: 50;" stylesheets="@style/Style.css" visibleRowCount="20">
+         <effect>
+            <InnerShadow height="35.0" radius="20.75" width="50.0">
+               <input>
+                  <DropShadow height="20.0" radius="9.5" spread="0.2" width="20.0" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="specialityBox" layoutX="79.0" layoutY="122.0" opacity="0.9" prefHeight="26.0" prefWidth="231.0" promptText="Специальность" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-color: #4682B4; -fx-border-radius: 50;" visibleRowCount="20">
+         <effect>
+            <InnerShadow height="35.0" radius="20.75" width="50.0">
+               <input>
+                  <DropShadow height="20.0" radius="9.5" spread="0.2" width="20.0" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="groupBox" layoutX="82.0" layoutY="160.0" opacity="0.9" prefHeight="27.0" prefWidth="87.0" promptText="Группа" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-color: #4682B4; -fx-border-radius: 50;" visibleRowCount="20">
+         <effect>
+            <InnerShadow height="42.5" radius="22.625" width="50.0">
+               <input>
+                  <DropShadow height="20.0" radius="9.5" spread="0.2" width="20.0" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </ComboBox>
+      <Button fx:id="menuButton" layoutX="346.0" layoutY="252.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" rotate="180.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@style/Style.css" text="^" textFill="#295592">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="60.0" radius="29.5" spread="0.2" width="60.0">
+               <color>
+                  <Color red="0.16078431904315948" green="0.3333333432674408" blue="0.572549045085907" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="weekField" alignment="CENTER" layoutX="191.0" layoutY="173.0" prefHeight="27.0" prefWidth="94.0" promptText="YYYY-MM-DD" style="-fx-background-color: #F0F8FF; -fx-background-radius: 50; -fx-border-color: #4682b4; -fx-border-radius: 50;">
+         <effect>
+            <InnerShadow height="30.0" radius="14.5" width="30.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="181.0" layoutY="148.0" text="Начало недели" textFill="STEELBLUE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="currentWeek" layoutX="195.0" layoutY="213.0" mnemonicParsing="false" text="Текущая неделя" textFill="STEELBLUE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="nextWeek" layoutX="195.0" layoutY="231.0" mnemonicParsing="false" text="Следующая неделя" textFill="STEELBLUE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ownWeek" layoutX="288.0" layoutY="178.0" mnemonicParsing="false" textFill="STEELBLUE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </RadioButton>
+    </children>
+</AnchorPane>
